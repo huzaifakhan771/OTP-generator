@@ -1,5 +1,5 @@
 # OTP-generator
-Simple OTP generator in Python for generating secure varying length OTP codes
+Simple OTP generator in **Python3** for generating secure varying length OTP codes
 
 ## Usage
 
