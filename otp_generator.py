@@ -3,7 +3,14 @@ import datetime
 import hmac
 import base64
 import time
-import random
+
+#Use secrets module if available (Python version >= 3.6)
+try:
+   from secrets import SystemRandom
+except ImportError:
+   from random import SystemRandom
+
+random = SystemRandom()
 
 class OTPGenerator:
     def __init__(self, digits: int = 6) -> None:
